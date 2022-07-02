@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTT-8">
+    <meta http-equiv=""X-UA-Compatible content="IE=edge">
+    <meta name="viewport" content="width=Neo  initial-scale=1.0">
+
+    <title>Tabs</title>
+    <link href="'style.css " rel="'stylesheet">
+
+        <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+
+
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:#f2fff4;
+            font-family:Montserrat;
+        }
+        .tabs{
+            max-width:400px;
+            display:flex;
+            flex-direction: column;
+            width:100%;
+            background:#fff ;
+            box-shadow:0px 0px 10px yellow(0,0,0,05);    
+        }
+
+        .tabs_head{
+            display:flex;
+            align-items:stretch;
+
+
+        }
+        .tabs_toggle{
+            display:flex;
+            width:33.33%;
+            height:50px;
+            align-items:center;
+            justify-content: center;
+            background: #f2f2f2;
+            cursor:pointer;
+        }
+
+        .tabs_toggle.is-active{
+            background:#fff;
+        }
+
+        .tabs_content{
+            padding:30px;
+            display:none;
+        }
+
+        .tabs_content.is-active{
+            display:block;
+        }
+
+        .tabs_title{
+            font-size:18px;
+            color:#000;
+            font-weight:bold;
+            margin-bottom:20px;
+        }
+
+        .tabs_text{
+            font-size:14px;
+            color:#000;
+
+        }
+
+    </style>
+       
+
+
+    </head>
+
+    <body>
+
+
+
+
+
+        <div class="tabs">
+            <div class="tabs_head">
+                <span class="tabs_toggle is-active">FIRST</span>
+                <span class="tabs_toggle">SECOND</span>
+                <span class="tabs_toggle">THIRD</span>
+
+            </div>
+            <div class="tabs_body">
+                <div class="tabs_content is-active">
+                    <h2 class="tabs_title">First </h2>
+                    <p class="tabs_text">Kabul, Persian Kābol, city, capital of the province of Kabul and of 
+                        Afghanistan. The largest urban centre in the country and also its political and economic
+                         hub, the city forms one of several districts of Kabul province. It lies at the
+                          intersection of roads that lead to Uzbekistan (via Mazār-e Sharīf) to the north, Pakistan
+                           (via Jalālābād) to the east, and Kandahār to the south. A settlement has existed at or
+                            near Kabul for some 3,500 years, but it was not until the early 20th century that the
+                             city extended north of the Kabul River. This growth continued through the 1980s, when
+                              villagers from areas affected by the Afghan War (1978–92) migrated to the relative 
+                              safety of Kabul. Fighting between factions who occupied the city in 1992 resulted 
+                              in significant damage and displacement of the urban population.</p>
+                </div>
+                <div class="tabs_content">
+                    <h2 class="tabs_title">Second</h2>
+                    <p class="tabs_text">Parwan Province is located in eastern Afghanistan, nearby the Afghanistan
+                         - Pakistan border. Parwan is bordered in the north by Baghlan province, in the east by 
+                         Panjshir and Kapisa provinces, in the south by Kabul and Mayden Wardak provinces, and the
+                          west by Bamyan and Mayden Wardak. The topography of Parwan is composed of Ghowr Band River
+                           and the Panjshir River. It is a mountainous province with Kott-I-Baba Range in the
+                            southwest, Panjshir Range in the north; Paghman Range in the southeast.  River valleys
+                             are prominent and crops are rain fed around Charikar district, which includes many
+                              vineyards and gardens. The majority of territory is usable as rangeland, with some 
+                              areas of intense irrigation. In Ghorband and Shinwari districts there remains snow 
+                              year round.</p>
+                </div>
+                <div class="tabs_content">
+                    <h2 class="tabs_title">Third</h2>
+                    <p class="tabs_text">Nangarhar Province is located in eastern Afghanistan, on the Afghanistan 
+                        - Pakistan border. It is bordered by Kunar and Laghman provinces in the north, Pakistan in
+                         the east and south, and Kabul and Logar provinces in the west. Spin Ghar and Safed 
+                         Mountain Ranges reside along the southern border; belts of forests are in the southern
+                          mountain ranges and in Dara-I-Nur District in the north. Khyber Pass is in Mahmund Dara
+                           District in the east. The topography is composed of rangeland, bare soil, and rocky 
+                           outcrops dominate throughout the center of the province.</p>
+                </div>
+            </div>
+        </div>
+        <script src="let.js"></script>
+    </body>
+</html>
